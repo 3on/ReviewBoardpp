@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+
+  "name": "Review Board ++",
+  "description": "Improve review board's UX",
+  "version": "1.0",
+
+  "content_scripts": [
+    {
+      "matches": ["https://reviewboard.yelpcorp.com/*"],
+      "css": ["style.css"],
+      "js": ["script.js"]
+    }
+  ],
+
+  "permissions": [
+    "clipboardWrite",
+    "clipboardRead",
+    "tabs",
+    "http://api.giphy.com/*"
+  ],
+
+  "web_accessible_resources": [
+    "img/clippy.svg"
+  ]
+}
